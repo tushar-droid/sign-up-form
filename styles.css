@@ -1,0 +1,36 @@
+:root{
+    --back-grey:rgba(128, 128, 128, 0.4);
+}
+
+body{
+    display: flex;
+    margin:0;
+    padding: 0;
+    height: 100vh;
+}
+
+.left-container{
+    position: relative;
+}
+
+
+.right-container{
+    background-color: #04090d;
+    flex:1.5
+}
+.car-img{
+    height:100%;
+    
+    width: 100%;
+}
+
+.title{
+    position: absolute;
+    top: 65%;
+    left:30%;
+    color:white;
+    font-size: 3.2vw;
+    background-color: var(--back-grey);
+    padding: 5% 20%;
+}
+
