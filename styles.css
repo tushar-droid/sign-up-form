@@ -1,5 +1,7 @@
 :root{
     --back-grey:rgba(128, 128, 128, 0.4);
+    --white-font-color:white;
+    color:white;    
 }
 
 body{
@@ -16,11 +18,12 @@ body{
 
 .right-container{
     background-color: #04090d;
-    flex:1.5
+    flex:1.5;
+    display:flex;
+    flex-direction: column;
 }
 .car-img{
-    height:100%;
-    
+    height:100%;  
     width: 100%;
 }
 
@@ -28,9 +31,27 @@ body{
     position: absolute;
     top: 65%;
     left:30%;
-    color:white;
-    font-size: 3.2vw;
+    color:var(--white-font-color);
+    font-size: 3.5vw;
     background-color: var(--back-grey);
     padding: 5% 20%;
 }
 
+.heading{
+    color: var(--white-font-color);
+    padding: 2% 5%;
+    font-size: 2.2vw;
+    text-align: right;
+}
+
+.form-container{
+    border: solid white;
+    align-self: center;
+    margin-top:10%;
+    padding: 5% 10%;
+    font-size: 1vw;
+}
+
+input{
+    font-size: 1.5vw;
+}
