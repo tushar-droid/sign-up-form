@@ -72,12 +72,19 @@ input{
     font-size: larger;
     padding-left: 10%;
     background-color: #04090d;
+    color:var(--white-font-color);
     border:none;
     border-bottom: solid var(--white-font-color);
     border-left: solid var(--white-font-color);
     border-radius: 8px;
     transform: skewX(-10deg);
-
+    background: linear-gradient(to left, #04090d 50%, red 60%) right;
+    background-size: 200% 100%;
+    transition:all 1.7s ease;
+}
+input:focus{
+    background-position: left;
+    transition:all 1.5s ease; 
 }
 
 label {
@@ -89,12 +96,19 @@ label {
   input:focus + label {
     color: var(--white-font-color);
     transform: translate(0, -5.5vh);
+    
   }
+
+  input:focus + label,
+  input:not(:placeholder-shown) + label  {
+    color: var(--white-font-color);
+    transform: translate(0, -5.5vh);
+  }
+
 
 .submit-btn{
     padding: 5px 10px;
     font-size: 2.5vw;
-    background-color: red;
     color:var(--white-font-color);
     border:none;
     transform: skewX(-10deg);
@@ -102,7 +116,13 @@ label {
     align-self:flex-end;
     margin-top:10%;
     margin-right:-30%;
-
+    background: linear-gradient(to left, #04090d 50%, red 60%) right;
+    background-size: 200% 100%;
+    transition:all 1.7s ease;
 }
 
 
+.submit-btn:hover{
+    background-position: left;
+    transition:all 1.5s ease; 
+}
