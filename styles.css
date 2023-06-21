@@ -70,12 +70,18 @@ body{
 
 input{
     font-size: larger;
-    transform: skewX(-10deg);
     padding-left: 10%;
+    background-color: #04090d;
+    border:none;
+    border-bottom: solid var(--white-font-color);
+    border-left: solid var(--white-font-color);
+    border-radius: 8px;
+    transform: skewX(-10deg);
+
 }
 
 label {
-    color:#04090d;
+    color:var(--white-font-color);
     transform: translate(.75vw, -2.5vh);
     transition: all 0.2s ease-out;
   }
