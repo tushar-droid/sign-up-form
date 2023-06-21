@@ -35,9 +35,6 @@ body{
     font-size: 3.5vw;
     background-color: var(--back-grey);
     padding: 5% 20%;
-    -webkit-transform: skewX(-10deg);
-    -moz-transform: skewX(-10deg);
-    -ms-transform: skewX(-10deg);
     transform: skewX(-10deg);
     box-shadow: 10px 10px 50px  red ;
 
@@ -73,6 +70,8 @@ body{
 
 input{
     font-size: larger;
+    transform: skewX(-10deg);
+    padding-left: 10%;
 }
 
 label {
@@ -85,4 +84,19 @@ label {
     color: var(--white-font-color);
     transform: translate(0, -5.5vh);
   }
+
+.submit-btn{
+    padding: 5px 10px;
+    font-size: 2.5vw;
+    background-color: red;
+    color:var(--white-font-color);
+    border:none;
+    transform: skewX(-10deg);
+    width:50%;
+    align-self:flex-end;
+    margin-top:10%;
+    margin-right:-30%;
+
+}
+
 
