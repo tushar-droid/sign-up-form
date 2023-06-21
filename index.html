@@ -16,18 +16,39 @@
     <div class="right-container">
         <h1 class="heading">Rev it up with MotorMates: <br>Shift into Gear, Connect, and Accelerate!</h1>
     <form action="somepath" class="form-container" method="post">
-        <div class="names">
-            <input type="text" id="first_name" placeholder="First Name">
-            <input type="text" id="last_name" placeholder="Last Name">
+        <div class="names">   
+                <div class="fld-stack">  
+                    <input type="text" id="first_name" placeholder=" ">
+                    <label for="first_name">First Name</label>            
+                </div>
+                <div class="fld-stack">
+                    <input type="text" id="last_name" placeholder=" ">
+                    <label for="last_name">Last Name</label>          
+                </div>
        </div>  
-       <div class="contact-details">
-        <input type="email" id="email" placeholder="vindiesel@fnf.com">
-        <input type="tel" id="phone" placeholder="XXX XXX XX23">
+
+
+       <div class="contact-details">   
+            <div class="fld-stack">       
+                <input type="email" id="email" placeholder=" ">
+                <label for="email">Email</label>
+            </div>
+            <div class="fld-stack">
+                <input type="tel" id="phone" placeholder=" " >
+                <label for="phone">Phone No.</label>
+            </div>
+            
        </div>
-       <div class="password-details">
-        <input type="password" id="password" placeholder="Password">
-        <input type="password" id="confirm-password" placeholder="Confrim Password">
-       </div>
+       <div class="password-details">   
+            <div class="fld-stack">   
+                <input type="password" id="password" placeholder=" ">
+                <label for="password">Password</label>  
+            </div>
+            <div class="fld-stack">          
+                <input type="password" id="confirm-password" placeholder=" ">
+                <label for="confirm-password">Confirm Password</label>
+            </div>
+       </div> 
 
     </form>
 
