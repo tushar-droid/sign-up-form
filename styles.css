@@ -16,6 +16,7 @@ body{
 
 .left-container{
     position: relative;
+    flex:0.9;
 }
 
 
@@ -32,11 +33,11 @@ body{
 
 .title{
     position: absolute;
-    top: 65%;
+    top: 78%;
     left:30%;
     color:var(--white-font-color);
     font-size: 3.5vw;
-    background-color: var(--back-grey);
+    background-color: rgb(14, 13, 13);
     padding: 5% 20%;
     transform: skewX(-10deg);
     box-shadow: 10px 10px 50px  red ;
@@ -155,6 +156,7 @@ label {
 }
 
 .image-credit{
-    margin-top:-10%;
+    margin-top:-3%;
     padding-left:10% ;
+    color: black;
 }
