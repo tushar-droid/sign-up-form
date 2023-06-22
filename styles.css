@@ -82,7 +82,7 @@ input{
     border-bottom: solid var(--white-font-color);
     border-radius: 4px;
     transform: skewX(-10deg);
-    background: linear-gradient(to left, #04090d 50%, red 60%) right;
+    background: linear-gradient(to left, #04090d 50%, rgba(255, 0, 0, 0.714) 60%) right;
     background-size: 200% 100%;
     transition:all 1.7s ease;
     font-family: 'Bangers', cursive;
