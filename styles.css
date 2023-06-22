@@ -148,3 +148,13 @@ label {
     color:white;
     font-style: italic;
 }
+
+
+#email:invalid{
+    border: solid red;
+}
+
+.image-credit{
+    margin-top:-10%;
+    padding-left:10% ;
+}

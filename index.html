@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,17 +12,18 @@
     <div class="left-container">
         <img src="assets/verticalcar.jpg" alt="car background" class="car-img">
         <h1 class="title">MOTORMATES</h1>
+        <p class="image-credit">  Image by Ante Samarzija</p>
     </div>
     <div class="right-container">
         <h1 class="heading">Rev it up with MotorMates: <br>Shift into Gear, Connect, and Accelerate!</h1>
-    <form action="somepath" class="form-container" method="post">
+    <form action="#" class="form-container" method="post">
         <div class="names">   
                 <div class="fld-stack">  
-                    <input type="text" id="first_name" placeholder=" ">
+                    <input type="text" id="first_name" placeholder=" " required>
                     <label for="first_name">First Name</label>            
                 </div>
                 <div class="fld-stack">
-                    <input type="text" id="last_name" placeholder=" ">
+                    <input type="text" id="last_name" placeholder=" " required>
                     <label for="last_name">Last Name</label>          
                 </div>
        </div>  
@@ -30,22 +31,22 @@
 
        <div class="contact-details">   
             <div class="fld-stack">       
-                <input type="email" id="email" placeholder=" ">
+                <input type="email" id="email" placeholder=" " >
                 <label for="email">Email</label>
             </div>
             <div class="fld-stack">
-                <input type="tel" id="phone" placeholder=" " >
+                <input type="tel" id="phone" placeholder=" " pattern="[0-9]{10}"  title="1234567890" required>
                 <label for="phone">Phone No.</label>
             </div>
             
        </div>
        <div class="password-details">   
             <div class="fld-stack">   
-                <input type="password" id="password" placeholder=" ">
+                <input type="password" id="password" placeholder=" " required>
                 <label for="password">Password</label>  
             </div>
             <div class="fld-stack">          
-                <input type="password" id="confirm-password" placeholder=" ">
+                <input type="password" id="confirm-password" placeholder=" " required>
                 <label for="confirm-password">Confirm Password</label>
             </div>
        </div> 
@@ -58,6 +59,6 @@
     </div>
 
     </div>
-    
+
 </body>
 </html>
