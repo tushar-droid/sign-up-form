@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 :root{
     --back-grey:rgba(128, 128, 128, 0.4);
     --white-font-color:white;
     color:var(--white-font-color);    
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
 }
 
 body{
@@ -37,7 +40,7 @@ body{
     padding: 5% 20%;
     transform: skewX(-10deg);
     box-shadow: 10px 10px 50px  red ;
-
+    letter-spacing: 10px;
 }
 
 .heading{
@@ -66,6 +69,7 @@ body{
 .fld-stack{
     display: flex;
     flex-direction: column;
+    margin: 1.5vh;
 }
 
 input{
@@ -75,12 +79,14 @@ input{
     color:var(--white-font-color);
     border:none;
     border-bottom: solid var(--white-font-color);
-    border-left: solid var(--white-font-color);
-    border-radius: 8px;
+    border-radius: 4px;
     transform: skewX(-10deg);
     background: linear-gradient(to left, #04090d 50%, red 60%) right;
     background-size: 200% 100%;
     transition:all 1.7s ease;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
+    width: 100%;
 }
 input:focus{
     background-position: left;
@@ -118,11 +124,27 @@ label {
     margin-right:-30%;
     background: linear-gradient(to left, #04090d 50%, red 60%) right;
     background-size: 200% 100%;
-    transition:all 1.7s ease;
+    transition:all 1.7s ease;   
+    font-family: 'Bangers', cursive;
 }
 
 
 .submit-btn:hover{
     background-position: left;
     transition:all 1.5s ease; 
+}
+
+.have-account{
+    color: var(--white-font-color);
+    align-self: flex-end;
+    padding-right: 12vw;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+    margin-top:12px;
+}
+
+.login-link{
+    text-decoration: none;
+    color:white;
+    font-style: italic;
 }
